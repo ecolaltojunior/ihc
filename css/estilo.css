@@ -1,0 +1,98 @@
+*{margin:0; padding:0;}
+
+body{
+    font-size: 14px;
+}
+/*comentario*/
+.flex-container{
+    display: flex;
+    width: 100%;
+}
+
+#topo{
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+.imagem{
+    width: 30%;
+    height: auto;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    background-color: crimson;
+    justify-content: center;
+}
+
+.menu{
+    display: inline-flex;
+    list-style:none;
+    justify-content: space-around;
+}
+
+.menu li{
+    position: relative;
+    padding: 10%;
+}
+
+.menu li a{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+
+    color: #000;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: crimson;
+    padding: 5%;
+}
+
+.menu li:hover ul{
+    display: block;
+    
+}
+
+.menu li ul li{
+    display: block;
+    width: 170px;
+}
+
+#conteudo{
+    min-height: 800px;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+
+#conteudo h1{
+
+    text-align: center;
+    padding: 2% 5%;
+}
+
+#conteudo p, ol, h2, img{
+    padding: 2% 5%;
+}
+
+#rodape{
+    justify-content: center;
+    text-align: center;
+    background-color: darkblue;
+    color: #fff;
+    height: 80px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

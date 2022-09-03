@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, css, layout, comentários, metadados">
     <title>Revisão front</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <header>
-        <img src="imagem/FATEC_ZONA_LESTE.png" alt="logo fatec zona leste nas cores cinza e vermelho">
-        <nav role="menubar">
-            <ul role="menu">
+    <header class="flex-container" id="topo">
+        <img class="imagem" src="imagem/FATEC_ZONA_LESTE.png" alt="logo fatec zona leste nas cores cinza e vermelho">
+    </header>
+        <nav role="menubar" class="flex-container">
+            <ul role="menu" class="menu">
                 <li role="menuitem" aria-haspopup="false"><a href="index.html">Início</a></li>
                 <li><a href="comentarios.html">Comentários</a></li>
                 <li><a href="metadados.html">Metadados</a></li>
@@ -24,8 +26,8 @@
                 <li><a href="layout.html">Layout</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
+    
+    <main class="flex-container" id="conteudo">
         <h1>REVISÃO FRONT END</h1>
         <h2>Conteúdos apresentados</h2>
         <ol>
@@ -35,7 +37,7 @@
             <li>Layout</li>
         </ol>
     </main>
-    <footer>
+    <footer class="flex-container" id="rodape">
         <p>Desenvolvido por Junior<br>
             Todos os direitos reservados &copy; 2022
         </p>
