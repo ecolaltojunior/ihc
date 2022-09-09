@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, css, layout, comentários, metadados">
     <title>Revisão front</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <header>
-        <img src="imagem/FATEC_ZONA_LESTE.png" alt="logo fatec zona leste nas cores cinza e vermelho">
-        <nav role="menubar">
-            <ul role="menu">
+    <header class="flex-container" id="topo">
+        <img class="imagem" src="imagem/FATEC_ZONA_LESTE.png" alt="logo fatec zona leste nas cores cinza e vermelho">
+    </header>
+        <nav role="menubar" class="flex-container">
+            <ul role="menu" class="menu">
                 <li role="menuitem" aria-haspopup="false"><a href="index.html">Início</a></li>
                 <li><a href="comentarios.html">Comentários</a></li>
                 <li><a href="metadados.html">Metadados</a></li>
@@ -24,16 +26,16 @@
                 <li><a href="layout.html">Layout</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
+    
+    <main class="flex-container" id="conteudo">
         <h1>Listas não ordenadas</h1>
             <p>Uma lista não ordenada começa com a tag &lt;ul&gt;. Cada item da lista começa com a tag &lt;li&gt;.</p>
             <p>Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão.</p>
             
 
-        <img src="imagem/ul.png" alt="imagem contendo a descrição de um código html para lista não ordenada">
+        <img class="imagem" src="imagem/ul.png" alt="imagem contendo a descrição de um código html para lista não ordenada">
     </main>
-    <footer>
+    <footer class="flex-container" id="rodape">
         <p>Desenvolvido por Junior<br>
             Todos os direitos reservados &copy; 2022
         </p>
