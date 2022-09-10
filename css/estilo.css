@@ -96,3 +96,34 @@ nav{
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+form, fieldset{
+    padding: 5%;
+    border: none;
+}
+
+input, select, textarea{
+    width: 60%;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+label, legend{
+    font-size: 0.7em;
+}
+
+button{
+
+    width: 25%;
+    padding: 2%;
+    margin-left: 6%;
+}
+
+.required::after{
+    content: " *";
+    color: red;
+
+}
+
+
+

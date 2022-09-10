@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css, layout, comentários, metadados">
+    <title>Revisão front</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="flex-container" id="topo">
+        <img class="imagem" src="imagem/FATEC_ZONA_LESTE.png" alt="logo fatec zona leste nas cores cinza e vermelho">
+    </header>
+        <nav role="menubar" class="flex-container">
+            <ul role="menu" class="menu">
+                <li role="menuitem" aria-haspopup="false"><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li role="menuitem" aria-haspopup="true"><a href="javascript:void(0);">Listas</a>
+                    <ul>
+                        <li><a href="ul.html">Lista não ordenada</a></li>
+                        <li><a href="ol.html">Lista Ordenada</a></li>
+                    </ul>
+                </li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    
+    <main class="flex-container" id="conteudo">
+        <h1>FALE CONOSCO</h1>
+        <form name="contato" id="contato">
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label class="required" for="nome">Nome</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required><br>
+                <label class="required" for="cpf">CPF</label><br>
+                <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required><br>
+                <label class="required" for="email">E-Mail</label><br>
+                <input type="email" name="email" id="email" placeholder="nome@site.com.br" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Dados de endereço</legend>
+                <label class="required" for="cep">CEP</label><br>
+                <input type="text" name="cep" id="cep" placeholder="99999-999" required><br>
+                <label for="rua">Rua</label><br>
+                <input type="text" name="rua" id="rua"><br>
+                <label class="required" for="numero">Número</label><br>
+                <input type="number" name="numero" id="numero" required><br>
+                <label for="complemento">Complemento</label><br>
+                <input type="text" name="complemento" id="complemento" placeholder="Apartamento, bloco, casa..."><br>
+                <label for="bairro">Bairro</label><br>
+                <input type="text" name="bairro" id="bairro"><br>
+                <label for="cidade">Cidade</label><br>
+                <input type="text" name="cidade" id="cidade"><br>
+                <label for="estado">Estado</label><br>
+                <input type="text" name="estado" id="estado"><br>
+                
+
+            </fieldset>
+            <fieldset>
+                <legend>Dados da Mensagem</legend>
+                <label class="required" for="assunto">Assunto</label><br>
+                <select name="assunto" id="assunto" required>
+                    <option value="" selected disabled>Selecione um assunto</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamação">Reclamação</option>
+                    <option value="sugestão">Sugestão</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+                <label class="required" for="mensagem">Mensagem</label><br>
+                <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem" rows="10" cols="35" required></textarea>
+            </fieldset>
+            <p>Campos marcados com asterisco (*), são de preenchimento obrigatório.</p>
+
+            <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+
+
+
+        </form>
+    </main>
+    <footer class="flex-container" id="rodape">
+        <p>Desenvolvido por Junior<br>
+            Todos os direitos reservados &copy; 2022
+        </p>
+    </footer>
+</body>
+</html>
