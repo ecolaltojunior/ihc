@@ -8,6 +8,26 @@ body{
     display: flex;
     width: 100%;
 }
+.acessibilidade{
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.atalhos, .atalhos2{
+    list-style: none;
+    display: inline-flex;
+    padding: 5px;
+    justify-content: left;
+}
+.atalhos li{
+     padding-left: 10px;
+}
+.atalhos2{
+    margin-left: 40%;
+
+}
+.atalhos2 li{
+    padding-left: 10px;
+}
 
 #topo{
     background-color: #eee;
