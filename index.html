@@ -25,18 +25,21 @@
     </div>
     <header class="flex-container" id="topo">
         <img class="imagem" src="imagem/FATEC_ZONA_LESTE.png" alt="logo fatec zona leste nas cores cinza e vermelho">
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
     </header>
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
-        </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
+    
         <nav role="menubar" class="flex-container">
+            <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+            <input type="checkbox" id="bt_menu">
             <ul role="menu" class="menu" id="menu">
                 <li role="menuitem" aria-haspopup="false"><a href="index.html">Início</a></li>
                 <li><a href="comentarios.html">Comentários</a></li>
@@ -54,6 +57,7 @@
         </nav>
     
     <main class="flex-container" id="conteudo">
+        <section>
         <h1>REVISÃO FRONT END</h1>
         <h2>Conteúdos apresentados</h2>
         <ol>
@@ -62,6 +66,7 @@
             <li>Listas</li>
             <li>Layout</li>
         </ol>
+        </section>
     </main>
     <footer class="flex-container" id="rodape">
         <p>Desenvolvido por Junior<br>

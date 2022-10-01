@@ -92,7 +92,11 @@ nav{
     display: block;
     width: 160px;
 }
+/* menu responsivo */
 
+label[for="bt_menu"], #bt_menu{
+    display: none;
+}
 
 #conteudo{
     min-height: 800px;
@@ -107,7 +111,7 @@ nav{
     padding: 2% 5%;
 }
 
-#conteudo p, ol, h2, img{
+section{
     padding: 2% 5%;
 }
 
@@ -149,5 +153,148 @@ button{
 
 }
 
+/* media querie para menu */
+@media screen and (max-width: 800px) {
+    
+    nav{
 
+        justify-content: left;
+        height: auto;
+        width: 100%;
+    }
 
+    .menu{
+        display: none;
+    }
+
+    label[for="bt_menu"]{
+        margin: 2%;
+        display: block;
+    }
+
+    #bt_menu:checked ~ .menu{
+       
+        display: block;
+    }
+
+    .menu li{
+
+        padding: 10% 1px;
+    }
+}
+
+/*media querie barra de acessibilidade*/
+
+@media screen and (max-width: 1180px) {
+
+    .acessibilidade{
+        background-color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+        width: 100%;
+    }
+    .atalhos, .atalhos2{
+        list-style: none;
+        display: inline-flex;
+        padding: 4px;
+        justify-content: left;
+    }
+    .atalhos li{
+         padding-left: 4px;
+    }
+    .atalhos2{
+        margin-left: 35%;
+    
+    }
+    .atalhos2 li{
+        padding-left: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 820px) {
+
+    .acessibilidade{
+        background-color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+        width: 100%;
+    }
+    .atalhos, .atalhos2{
+        list-style: none;
+        display: inline-flex;
+        padding: 3px;
+        justify-content: left;
+    }
+    .atalhos li{
+         padding-left: 3px;
+    }
+    .atalhos2{
+        margin-left: 20%;
+    
+    }
+    .atalhos2 li{
+        padding-left: 3px;
+    }
+    
+}
+
+@media screen and (max-width: 540px) {
+
+    .acessibilidade{
+        background-color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .atalhos{
+
+        display: none;
+    }
+    .atalhos2{
+        list-style: none;
+        display: inline-flex;
+        padding: 10px;
+        justify-content: left;
+    }
+  
+    .atalhos2{
+        margin-left: 5%;
+    
+    }
+    .atalhos2 li{
+        padding-left: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 360px) {
+
+    .acessibilidade{
+        background-color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .atalhos{
+
+        display: none;
+    }
+    .atalhos2{
+        list-style: none;
+        display: inline-flex;
+        padding: 3px;
+        justify-content: left;
+    }
+  
+    .atalhos2{
+        margin-left: 2%;
+    
+    }
+    .atalhos2 li{
+        padding-left: 5px;
+    }
+    
+}
