@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #530101;
+
+}
+
+nav li{
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav li a{
+    color: #fff ;
+}
+main{
+    flex-direction: column;
+}
+
+footer{
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+}
