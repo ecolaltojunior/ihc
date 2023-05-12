@@ -32,10 +32,40 @@ nav li a{
 }
 main{
     flex-direction: column;
+    
+    
+}
+section{
+    padding: 10px;
+}
+
+label{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+input, textarea{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 30%;
+    border-radius: 10px;
+
+}
+
+button{
+    width: 10%;
+    height: 40px;
+    background-color: #530101;
+    color: #fff;
+}
+.required::after{
+    content: " *";
+    color: red;
 }
 
 footer{
-    height: 100px;
+    height: 10%;
     justify-content: center;
     align-items: center;
     background-color: #323232;
