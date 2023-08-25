@@ -21,12 +21,19 @@
         <h1>CONTATO</h1>
         <p>Campos marcados com asterisco (*) são obrigatórios</p>
         <form method="post">
+            <fieldset>
+                <legend>Dados pessoais</legend>
             <label for="nome" class="required">Nome</label><br>
             <input type="text" name="nome" id="nome" placeholder="Nome Complato" required><br>
             <label for="email" class="required">E-Mail</label><br>
+            
             <input type="email" name="email" id="email" placeholder="nome@site.com" required><br>
+        </fieldset>
             <label for="mensagem" class="required">Mensagem</label><br>
+            <fieldset>
+                <legend>Dados da mensagem</legend>
             <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite aqui sua mensagem" required></textarea><br>
+            </fieldset>
             <button type="submit">Enviar</button>
 
 

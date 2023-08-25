@@ -8,21 +8,45 @@
     <title>Prática de usabilidade</title>
 </head>
 <body>
+    <div class="acessibilidade flex-container">
+        <ul class="atalhos">
+            <li><a href="#conteudo" accesskey="1">Ir para o conteúdo [1]</a></li>
+            <li><a href="#menu" accesskey="2">Ir para o menu de navegação [2]</a></li>
+            <li><a href="#rodape" accesskey="3">Ir para o rodepé [3]</a></li>
+        </ul>
+        <ul class="links_acessibilidade">
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="javascript:void(0);" id="contraste">Contraste</a></li>
+            <li><a href="javascript:void(0);" id="semcontraste">Sem Contraste</a></li>
+
+        </ul>
+    </div>
     <header class="flex-container">
-        <nav>
+        <nav id="menu">
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="contato.html">Página 2</a></li>
             </ul>
         </nav>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
     </header>
-    <main class="flex-container">
+    <main id="conteudo" class="flex-container">
         <section>
             <h1>PRÁTICA DE USABILIDADE</h1>
             <p>Esta é a página inicial da prática de usabilidade.</p>
+            <img src="acessibilidade.jpg" alt="imagem contém seis blocos com cor de fundo azul e em cada bloco existem figuras que representam diferentes tipos de deficiência">
         </section>
     </main>
-    <footer class="flex-container">
+    <footer id="rodape" class="flex-container">
         <p>Todos os direitos reservados &copy; 2023.</p>
     </footer>
     
