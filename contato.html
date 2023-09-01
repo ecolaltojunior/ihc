@@ -6,8 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Prática de usabilidade</title>
+    <script src="contraste.js"></script>
 </head>
 <body>
+    <div class="acessibilidade flex-container">
+        <ul class="atalhos">
+            <li><a href="#conteudo" accesskey="1">Ir para o conteúdo [1]</a></li>
+            <li><a href="#menu" accesskey="2">Ir para o menu de navegação [2]</a></li>
+            <li><a href="#rodape" accesskey="3">Ir para o rodepé [3]</a></li>
+        </ul>
+        <ul class="links_acessibilidade">
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="javascript:void(0);" id="contraste">Contraste</a></li>
+            <li><a href="javascript:void(0);" id="semcontraste">Sem Contraste</a></li>
+
+        </ul>
+    </div>
     <header class="flex-container">
         <nav>
             <ul>
